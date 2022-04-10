@@ -1,0 +1,23 @@
+/* pages/video-details/index.wxss */
+.video{
+  width: 100%;
+}
+.mvInfos{
+  padding: 10rpx;
+}
+.top{
+  font-size: 32rpx;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10rpx;
+}
+.same{
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+.recommandMvs{
+  padding: 10rpx;
+}

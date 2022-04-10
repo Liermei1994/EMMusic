@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -15,6 +16,18 @@
           "name": "",
           "pathName": "pages/home-video/index",
           "query": "pages/home-video/index",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/video-details/index",
+          "query": "id=14517602",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/home-music/index",
+          "query": "",
           "scene": null
         }
       ]

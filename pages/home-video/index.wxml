@@ -1,5 +1,7 @@
-<view>
-<block wx:for="{{topArr}}" wx:key="id">
-<view>{{item.name}}</view>
-</block>
+
+<view class="videos">
+  <view class="item" wx:for="{{topArr}}" wx:key="id">
+    <video-item item="{{item}}" data-item="{{item}}" bindtap="goToVideoDetails"></video-item>
+  </view>
+  <!-- <view wx:if="{{!hasMore}}">暂无更多数据了！</view> -->
 </view>

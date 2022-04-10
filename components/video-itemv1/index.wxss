@@ -1,0 +1,55 @@
+/* components/video-itemv1/index.wxss */
+.item {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+
+.item .album {
+  width: 100%;
+  position: relative;
+}
+
+.item .album .image {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.item .album .info {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  bottom: 16rpx;
+  color: #fff;
+  font-size: 13px;
+  justify-content: space-between;
+}
+
+.item .album .info .count .txt {
+  margin-left: 40rpx;
+}
+
+.item .album .info .count::before {
+  content: "";
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  top: 3rpx;
+  left: 10rpx;
+  background-size: cover;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAOxJREFUOE+lk7EuhFEQRs95iFUKz0CnQK/1BlvZgk5BgoRCqaDyAhuJSkJnFRqh8QI2KuEhRib5r2xi+e/uTjLdzLnzfXdGZgyzPyLWgBWgCyy0MIfAJfCoDgrgHNgCBsBDC2AVyAcv1F4BfALv6nKNooh4BubVuQII4Eg9rARk3YEZjQe/ABGxrZ6NA0ZEFSChb0BPvR0FTQIofdeNxNdm4uoJCuCu0fw0KeAD2FH700jYVU+nNvG/7xxnYro9VNcr9+A+V15dLHuwBxwDL8BNC2QDWAL21ZPRY9oEMjstgC/gKvPnmGrG/qvmG1AZlhHrIjjwAAAAAElFTkSuQmCC');
+}
+
+.item .album .info .duration {
+  margin-right: 16rpx;
+}
+
+.item .content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+  margin-top: 16rpx;
+}

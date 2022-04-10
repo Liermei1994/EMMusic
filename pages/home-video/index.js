@@ -7,64 +7,53 @@ Page({
    * 页面的初始数据
    */
   data: {
-    topArr:[]
+    topArr:[],
+    hasMore:true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    topMv({offset:0}).then(res =>{
-      this.setData({topArr:res.data.data})
+    this.getDatas(0)
+  },
+
+  getDatas:function(offset){
+    if(!this.data.hasMore) return
+    topMv({offset:offset}).then(res =>{
+      let newArr = this.data.topArr
+      if(offset === 0 ){
+       newArr = res.data
+      }else{
+       newArr = newArr.concat(res.data)
+      }
+      this.setData({topArr:newArr})
+      this.setData({hasMore:res.hasMore})
+      if(offset === 0){
+        wx.stopPullDownRefresh()
+      }
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  //详情
+  goToVideoDetails(event){
+    const id = event.currentTarget.dataset.item.id
+    wx.navigateTo({
+      url: '/pages/video-details/index?id='+id,
+    })
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.getDatas(0)
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+    this.getDatas(this.data.topArr.length)
   }
 })

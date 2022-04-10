@@ -1,0 +1,25 @@
+{
+  "name": "pagckage",
+  "version": "1.0.0",
+  "description": "no description",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liermei1994/EMMusic.git"
+  },
+  "keywords": [
+    "lemmusic"
+  ],
+  "author": "lem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liermei1994/EMMusic/issues"
+  },
+  "homepage": "https://github.com/Liermei1994/EMMusic#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.2"
+  }
+}

@@ -1,2 +1,25 @@
-<!--pages/home-music/index.wxml-->
-<text>pages/home-music/index.wxml</text>
+
+<view>
+  <van-search
+  disabled
+  placeholder="请输入搜索关键词"
+  background="#fafafa"
+  shape="round"
+  bind:click-input="goSeacrh"
+  >
+  </van-search>
+  <!-- banner -->
+  <swiper class="swiper" indicator-dots autoplay circular style="height: {{swiperHeight}}px;">
+    <block wx:for="{{bannerList}}" wx:key="bannerId">
+      <swiper-item class="swiperItem">
+        <image 
+        class="si-img" 
+        src="{{item.pic}}" 
+        mode="widthFix"
+        bindload="watchImg"
+        >
+        </image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
