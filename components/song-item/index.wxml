@@ -1,0 +1,13 @@
+<wxs src="../../utils/format.wxs" module="format"></wxs>
+<view class="song-container">
+  <header-com leftTitle="{{title}}"></header-com>
+  <scroll-view scroll-x class="sc-list">
+    <view class="scl-item" wx:for="{{hotSongMenu}}" wx:key="id">
+      <view class="scli-top">
+        <image class="sclit-img" mode="widthFix" src="{{item.coverImgUrl}}"></image>
+        <view class="play-counter">{{format.formatCount(item.playCount)}}</view>
+      </view>
+      <view class="scli-bottom">{{item.name}}</view>
+    </view>
+  </scroll-view>
+</view>

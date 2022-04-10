@@ -4,6 +4,7 @@
   src="{{mvUrl.url}}"
   autoplay
   loop
+  referrer-policy="origin"
 >
 </video>
 <!-- mv信息 -->

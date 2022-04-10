@@ -1,0 +1,26 @@
+.head-container{
+  display: flex;
+  margin: 40rpx 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.hc-left{
+font-size: 30rpx;
+font-weight: bold;
+}
+/* 如果插槽内容为空，显示默认 */
+.slot:empty + .hcr-default{
+  display: flex;
+}
+.hcr-default{
+  display: none;
+  align-items: center;
+}
+.hcrd-txt{
+  font-size: 24rpx;
+  color: #666;
+}
+.hcrd-icon{
+  width: 50rpx;
+  height: 50rpx;
+}

@@ -42,7 +42,7 @@
     "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.18.1",
+  "libVersion": "2.16.0",
   "appid": "wx69e30b49ba787942",
   "projectname": "LMusic",
   "debugOptions": {

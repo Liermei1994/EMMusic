@@ -11,9 +11,14 @@ App({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
-    })
+    });
+    const res = wx.getSystemInfoSync()
+       this.globalData.screenHeight = res.screenWidth
+       console.log(this.globalData.screenHeight )
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    screenWidth:0,
+    screenHeight:0,
   }
 })

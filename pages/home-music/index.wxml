@@ -22,4 +22,25 @@
       </swiper-item>
     </block>
   </swiper>
+  <!-- header -->
+  <header-com leftTitle="推荐歌曲"></header-com>
+  <!-- 推荐歌曲展示 -->
+  <view class="recommendSongs">
+    <view class="rsItem" wx:for="{{recommendList}}" wx:key="id">
+      <view class="left">
+        <image class="img" mode="widthFix" src="{{item.al.picUrl}}"></image>
+      </view>
+      <view class="center">
+        <view class="txt">{{item.name}}</view>
+        <view class="txt">{{item.ar[0].name}} · {{item.al.name}}</view>
+      </view>
+      <view class="right">
+        <image class="icon" src="../../assets/images/arrow-right.png"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 热门歌单 -->
+  <songItem hotSongMenu="{{hotSongMenu}}" title="热门歌单"></songItem>
+  <!-- 推荐歌单 -->
+  <songItem hotSongMenu="{{recomMenu}}" title="推荐歌单"></songItem>
 </view>

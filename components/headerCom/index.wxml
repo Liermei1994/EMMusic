@@ -1,0 +1,12 @@
+<view class="head-container">
+  <view class="hc-left">{{leftTitle}}</view>
+  <view class="hc-right">
+    <view class="slot">
+      <slot></slot>
+    </view>
+    <view class="hcr-default">
+      <text class="hcrd-txt">{{rightTxt}}</text>
+      <image class="hcrd-icon" src="../../assets/images/arrow-right.png"></image>
+    </view>
+  </view>
+</view>
