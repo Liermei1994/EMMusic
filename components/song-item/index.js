@@ -12,6 +12,10 @@ Component({
     title:{
       type:String,
       value:''
+    },
+    screenWidth:{
+      type:String,
+      value:0
     }
   },
 

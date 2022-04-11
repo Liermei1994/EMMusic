@@ -40,7 +40,13 @@
     </view>
   </view>
   <!-- 热门歌单 -->
-  <songItem hotSongMenu="{{hotSongMenu}}" title="热门歌单"></songItem>
+  <songItem hotSongMenu="{{hotSongMenu}}" screenWidth="{{screenWidth}}" title="热门歌单"></songItem>
   <!-- 推荐歌单 -->
-  <songItem hotSongMenu="{{recomMenu}}" title="推荐歌单"></songItem>
+  <songItem hotSongMenu="{{recomMenu}}" screenWidth="{{screenWidth}}" title="推荐歌单"></songItem>
+  <!-- 巅峰榜 -->
+  <view class="lastThreeContent">
+    <block wx:for="{{rankings}}" wx:key="index">
+      <thirdMenu item="{{item}}"></thirdMenu>
+    </block>
+  </view>
 </view>

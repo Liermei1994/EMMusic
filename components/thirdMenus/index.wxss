@@ -1,0 +1,30 @@
+.tm-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+.tmc-left{
+  width: 60%;
+  padding: 20rpx;
+}
+.tmcl-title{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.tmcl-list{
+  font-size: 28rpx;
+  color: #666;
+  margin: 10rpx 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tmc-right{
+  width: 30%;
+}
+.tmcr-img{
+  width: 100%;
+}

@@ -1,0 +1,11 @@
+<view class="tm-container">
+  <view class="tmc-left">
+    <view class="tmcl-title">{{item.name}}</view>
+    <block wx:for="{{item.songList}}" wx:key="index">
+      <view class="tmcl-list">{{index+1}}.{{item.name}}</view>
+    </block>
+  </view>
+  <view class="tmc-right">
+  <image class="tmcr-img" src="{{item.coverImgUrl}}" mode="widthFix"></image>
+  </view>
+</view>
